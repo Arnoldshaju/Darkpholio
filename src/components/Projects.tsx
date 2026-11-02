@@ -40,6 +40,19 @@ const projects = [
     github: 'https://github.com/Arnoldshaju',
     live: 'https://terra-mindspace.vercel.app',
   },
+  {
+    number: '(04)',
+    category: 'Full-Stack · DevOps',
+    period: '2026',
+    title: 'Curl',
+    description:
+      'High-performance URL shortener & telemetry platform featuring collision-safe Base62 routing, sub-millisecond Redis caching, anti-SSRF defenses, and asynchronous Celery click analytics.',
+    tags: ['Next.js', 'Django REST', 'Redis', 'PostgreSQL', 'Celery', 'Docker'],
+    image: '/work-curl.jpg',
+    type: 'Full-Stack App',
+    github: 'https://github.com/Arnoldshaju/curl',
+    live: null,
+  },
 ]
 
 const fadeInUp = {
@@ -61,14 +74,14 @@ export function Projects() {
         </motion.div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
           {projects.map((project, index) => (
             <motion.article
               key={project.title}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-50px' }}
-              transition={{ duration: 0.8, ease: 'easeOut', delay: index * 0.15 }}
+              transition={{ duration: 0.8, ease: 'easeOut', delay: (index % 2) * 0.15 }}
               className="flex flex-col justify-between border border-gray-800 bg-black/40 p-6 group hover:border-gray-600 transition-colors"
             >
               <div>
