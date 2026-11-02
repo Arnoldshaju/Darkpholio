@@ -4,8 +4,8 @@ const experiences = [
   {
     title: 'Python Full Stack Developer Intern',
     company: 'Entri App',
-    location: 'Remote / Kochi, India',
-    period: 'July 2026 — Sept 2026',
+    location: 'Online / Kochi, India',
+    period: 'July 2026 (Present)',
     description: 'Gained practical experience in Python, Django, REST APIs, databases, and frontend development. Learned to build, test, debug, and deploy full-stack web applications.',
     skills: ['Python', 'Django', 'REST APIs', 'PostgreSQL', 'Frontend Development', 'Deployment'],
   },
