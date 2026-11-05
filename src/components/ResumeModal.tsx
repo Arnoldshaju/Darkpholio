@@ -116,7 +116,7 @@ export function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                     Looking to keep a copy of this resume?
                   </p>
                   <p className="text-xs text-gray-400">
-                    PDF format (1 Page) • 55 KB
+                    PDF format (1 Page) • 61 KB
                   </p>
                 </div>
                 <a
